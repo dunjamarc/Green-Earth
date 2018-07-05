@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 $font: 'Open Sans', sans-serif;
+$main-color: rgb(0, 47, 157);
 
 * {
     margin: 0;
@@ -15,7 +16,6 @@ a {
 .container {
     max-width: 1300px;
     margin: 0 auto;
-    border: 1px solid black;
 }
 
 header {
@@ -34,7 +34,7 @@ header {
                     display: inline-block;
                     margin-left: 40px;
                     a {
-                        color: rgb(0, 47, 157);
+                        color: $main-color;
                     }
                 }
             }
@@ -54,6 +54,39 @@ header {
                 }
 
             }
+        }
+    }
+}
+
+.hero {
+    .text {
+        color: rgb(255, 255, 255);
+        position: absolute;
+        top: 40%;
+        margin-left: 220px;
+        h1 {
+            font-size: 50px;
+            font-weight: bold;
+            line-height: 0.92;
+            width: 342px;
+        }
+        p {
+            margin: 20px 0;
+            font-size: 22px;
+            span {
+                font-size: 60%;
+                position: relative;
+                bottom: 6px;
+            }
+        }
+        button {
+            background-color: $main-color;
+            width: 180px;
+            height: 60px;
+            font-size: 24px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            border: none;
         }
     }
 }
