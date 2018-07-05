@@ -106,7 +106,6 @@ header .container {
 .offers {
   background-color: #002f9d; }
   .offers .container {
-    border: 1px solid black;
     max-width: fit-content;
     padding: 50px 0; }
     .offers .container p {
@@ -136,5 +135,17 @@ header .container {
         font-weight: bold;
         line-height: 0.833;
         margin: 30px; }
+
+.inspiration h1 {
+  font-size: 32px;
+  color: #002f9d;
+  text-align: center;
+  line-height: 130px;
+  font-weight: 100; }
+.inspiration a {
+  font-weight: bold;
+  color: #002f9d;
+  text-decoration-line: underline;
+  text-decoration-style: dashed; }
 
 /*# sourceMappingURL=main.css.map */

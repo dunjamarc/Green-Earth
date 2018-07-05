@@ -145,7 +145,6 @@ header {
 .offers {
     background-color: $main-color;
     .container {
-        border: 1px solid black;
         max-width: fit-content;
         padding: 50px 0;
         p {
@@ -179,4 +178,21 @@ header {
         }
     }
 }
+
+.inspiration {
+    h1 {
+        font-size: 32px;
+        color: $main-color;
+        text-align: center;    
+        line-height: 130px;
+        font-weight: 100;
+    } 
+    a {
+        font-weight: bold;
+        color: $main-color;
+        text-decoration-line: underline;
+        text-decoration-style: dashed;
+    }
+}
+
   
