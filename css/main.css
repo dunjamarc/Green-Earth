@@ -103,4 +103,38 @@ header .container {
       color: #021f59;
       text-align: left; }
 
+.offers {
+  background-color: #002f9d; }
+  .offers .container {
+    border: 1px solid black;
+    max-width: fit-content;
+    padding: 50px 0; }
+    .offers .container p {
+      font-size: 20px;
+      color: white;
+      line-height: 2;
+      margin-left: 10px; }
+    .offers .container .destination {
+      display: inline-block;
+      margin: 10px;
+      background-color: white; }
+      .offers .container .destination h4 {
+        font-size: 24px;
+        color: #021f59;
+        font-weight: bold;
+        margin: 10px 0 0 30px; }
+      .offers .container .destination p {
+        font-size: 18px;
+        line-height: 1.1;
+        color: #021f59;
+        text-align: left;
+        margin-left: 30px; }
+      .offers .container .destination a {
+        display: block;
+        font-size: 24px;
+        color: #002f9d;
+        font-weight: bold;
+        line-height: 0.833;
+        margin: 30px; }
+
 /*# sourceMappingURL=main.css.map */

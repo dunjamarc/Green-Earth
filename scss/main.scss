@@ -4,6 +4,13 @@ $font: 'Open Sans', sans-serif;
 $main-color: rgb(0, 47, 157);
 $text-color: rgb(2, 31, 89);
 
+@mixin text {
+    font-size: 18px;
+    line-height: 1.1;
+    color: $text-color;
+    text-align: left;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -130,10 +137,46 @@ header {
             margin-bottom: 7px;
         }
         p {
-            font-size: 18px;
-            line-height: 1.1;
-            color: $text-color;
-            text-align: left;
+            @include text;
         }
     }
 }
+
+.offers {
+    background-color: $main-color;
+    .container {
+        border: 1px solid black;
+        max-width: fit-content;
+        padding: 50px 0;
+        p {
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            line-height: 2;
+            margin-left: 10px;
+        }
+        .destination {
+            display: inline-block;
+            margin: 10px;
+            background-color: rgb(255, 255, 255);
+            h4 {
+                font-size: 24px;
+                color: $text-color;
+                font-weight: bold;
+                margin: 10px 0 0 30px;
+            }
+            p {
+                @include text;
+                margin-left: 30px;
+            }
+            a {
+                display: block;
+                font-size: 24px;
+                color: $main-color;
+                font-weight: bold;
+                line-height: 0.833;
+                margin: 30px;
+            }
+        }
+    }
+}
+  
