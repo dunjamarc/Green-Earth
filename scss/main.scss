@@ -11,6 +11,12 @@ $text-color: rgb(2, 31, 89);
     text-align: left;
 }
 
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -29,9 +35,7 @@ a {
 header {
     .container {
         height: 110px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flex;
         .menu {
             display: flex;
             align-items: center;
@@ -67,6 +71,7 @@ header {
 }
 
 .hero {
+    overflow: hidden;
     .text {
         color: rgb(255, 255, 255);
         position: absolute;
@@ -224,9 +229,7 @@ header {
 .subscribe {
     background-color: $main-color;
     .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flex;
         height: 130px;
         .form {
             display: inline-block;
@@ -273,20 +276,36 @@ header {
         }
     }
 }
-.Enter_your_email_address {
-    
-    font-family: "OpenSans";
-    color: rgba(255, 255, 255, 0.231);
-    line-height: 1.333;
-    text-align: left;
-    -moz-transform: matrix( 1.00006111305262,0,0,1,0,0);
-    -webkit-transform: matrix( 1.00006111305262,0,0,1,0,0);
-    -ms-transform: matrix( 1.00006111305262,0,0,1,0,0);
-    position: absolute;
-    left: 415.164px;
-    top: 2717.034px;
-    width: 179.36px;
-    height: 16.712px;
-    z-index: 18;
-  }
-  
+
+.terms {
+    .container {
+        @include flex;
+        height: 115px; 
+        .payment {
+            @include flex;
+            img {
+                margin: 15px;
+            }
+        }
+        .site-map {
+            display: inline-block;
+            ul {
+                list-style-type: none;
+                li {
+                    display: inline-block;
+                    margin: 10px;
+                    a {
+                        font-size: 16px;
+                        color: rgb(102, 102, 102);
+                        line-height: 1.25;
+                    }
+                }
+            }
+        }
+    }
+}
+ 
+.bottom {
+    background-color: rgb(56, 189, 255);
+    height: 10px;
+}
