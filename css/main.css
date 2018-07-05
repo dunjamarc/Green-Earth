@@ -148,4 +148,26 @@ header .container {
   text-decoration-line: underline;
   text-decoration-style: dashed; }
 
+.classes {
+  padding-top: 80px;
+  background-color: #021f59;
+  height: 800px;
+  text-align: center; }
+  .classes h4 {
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-weight: 200; }
+  .classes h1 {
+    font-size: 50px;
+    color: #38bdff;
+    font-weight: bold; }
+  .classes p {
+    font-size: 20px;
+    color: white;
+    line-height: 1.2;
+    width: 615px;
+    margin: 30px auto; }
+
 /*# sourceMappingURL=main.css.map */

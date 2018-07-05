@@ -195,4 +195,30 @@ header {
     }
 }
 
+.classes {
+    padding-top: 80px;
+    background-color: $text-color;
+    height: 800px;
+    text-align: center;
+    h4 {
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 1.2;
+        font-weight: 200;
+    }
+    h1 {
+        font-size: 50px;
+        color: rgb(56, 189, 255);
+        font-weight: bold;
+    }
+    p {
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+        width: 615px;
+        margin: 30px auto;
+    }
+} 
+
   
