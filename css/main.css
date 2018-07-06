@@ -4,6 +4,9 @@
   padding: 0;
   font-family: "Open Sans", sans-serif; }
 
+body, html {
+  height: 100%; }
+
 a {
   text-decoration: none; }
 
@@ -13,7 +16,15 @@ a {
 
 header .container {
   height: 110px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
   justify-content: space-between; }
   header .container .menu {
@@ -40,7 +51,13 @@ header .container {
           color: #021f59; }
 
 .hero {
-  overflow: hidden; }
+  background-image: url("../assets/beach.jpg");
+  height: 100%;
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
   .hero .text {
     color: white;
     position: absolute;
@@ -118,7 +135,10 @@ header .container {
     .offers .container .destination {
       display: inline-block;
       margin: 10px;
-      background-color: white; }
+      background-color: white;
+      padding-top: 170px;
+      height: 100%;
+      width: 240px; }
       .offers .container .destination h4 {
         font-size: 24px;
         color: #021f59;
@@ -137,6 +157,30 @@ header .container {
         font-weight: bold;
         line-height: 0.833;
         margin: 30px; }
+    .offers .container .london {
+      background-image: url("../assets/london.jpg");
+      height: 100%;
+      background-position: top;
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .offers .container .hamburg {
+      background-image: url("../assets/hamburg2.jpg");
+      height: 100%;
+      background-position: top;
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .offers .container .alicante {
+      background-image: url("../assets/alicante.jpg");
+      height: 100%;
+      background-position: top;
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .offers .container .milano {
+      background-image: url("../assets/expo.jpg");
+      height: 100%;
+      background-position: top;
+      background-size: contain;
+      background-repeat: no-repeat; }
 
 .inspiration h1 {
   font-size: 32px;
@@ -237,7 +281,15 @@ header .container {
 .subscribe {
   background-color: #002f9d; }
   .subscribe .container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
     justify-content: space-between;
     height: 130px; }
@@ -278,12 +330,28 @@ header .container {
         margin: 5px; }
 
 .terms .container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
   justify-content: space-between;
   height: 115px; }
   .terms .container .payment {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
     justify-content: space-between; }
     .terms .container .payment img {
@@ -303,5 +371,60 @@ header .container {
 .bottom {
   background-color: #38bdff;
   height: 10px; }
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 728px;
+    margin: 0 20px; }
+
+  .hero {
+    height: 80%; }
+    .hero .text {
+      margin-left: 20px; }
+
+  .about h1 {
+    font-size: 32px; }
+  .about .feature {
+    margin: 25px 0 10px 0;
+    width: 50%; }
+    .about .feature p {
+      font-size: 16px; }
+
+  .offers .destination.london {
+    background-image: url("../assets/londonT.jpg");
+    height: 100%;
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 350px;
+    padding-top: 224px;
+    margin: 5px; }
+  .offers .destination.hamburg {
+    background-image: url("../assets/hamburgT.jpg");
+    height: 100%;
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 350px;
+    padding-top: 224px;
+    margin: 5px; }
+  .offers .destination.alicante {
+    background-image: url("../assets/alicanteT.jpg");
+    height: 100%;
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 350px;
+    padding-top: 224px;
+    margin: 5px; }
+  .offers .destination.milano {
+    background-image: url("../assets/milanoT.jpg");
+    height: 100%;
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 350px;
+    padding-top: 224px;
+    margin: 5px; } }
 
 /*# sourceMappingURL=main.css.map */

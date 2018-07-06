@@ -1,0 +1,254 @@
+
+// ----------------hero section----------
+.hero {
+    @include background('../assets/beach.jpg');
+    background-size: cover;
+    background-position: center;
+    .text {
+        color: rgb(255, 255, 255);
+        position: absolute;
+        top: 40%;
+        margin-left: 220px;
+        h1 {
+            font-size: 50px;
+            font-weight: bold;
+            line-height: 0.92;
+            width: 342px;
+        }
+        p {
+            margin: 20px 0;
+            font-size: 22px;
+            span {
+                font-size: 60%;
+                position: relative;
+                bottom: 6px;
+            }
+        }
+        button {
+            background-color: $main-color;
+            width: 180px;
+            height: 60px;
+            font-size: 24px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            border: none;
+        }
+    }
+}
+
+// ---------------about section----------
+.about {
+    padding: 60px 0;
+    .container {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    & > p {
+        font-size: 16px;
+        color: rgb(117, 117, 117);
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: center;
+    }
+    h1 {
+        font-size: 50px;
+        color: $main-color;
+        font-weight: bold;
+        line-height: 0.9;
+        text-align: center;
+        margin: 20px;
+    }
+    .feature {
+        overflow: hidden;
+        width: 440px;
+        margin: 50px 60px 0 60px;
+        img {
+            float: left;
+            margin: 0 30px 30px 0;
+        }
+        h4 {
+            font-size: 24px;
+            color: $text-color;
+            font-weight: 100;
+            margin-bottom: 7px;
+        }
+        p {
+            @include text;
+        }
+    }
+}
+
+// ---------------offers section----------
+.offers {
+    background-color: $main-color;
+    .container {
+        max-width: fit-content;
+        padding: 50px 0;
+        p {
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            line-height: 2;
+            margin-left: 10px;
+        }
+        .destination {
+            display: inline-block;
+            margin: 10px;
+            background-color: rgb(255, 255, 255);
+            padding-top: 170px;
+            height: 100%;
+            width: 240px;
+            h4 {
+                font-size: 24px;
+                color: $text-color;
+                font-weight: bold;
+                margin: 10px 0 0 30px;
+            }
+            p {
+                @include text;
+                margin-left: 30px;
+            }
+            a {
+                display: block;
+                font-size: 24px;
+                color: $main-color;
+                font-weight: bold;
+                line-height: 0.833;
+                margin: 30px;
+            }
+        }
+        .london {
+            @include background('../assets/london.jpg');
+        }
+        .hamburg {
+            @include background('../assets/hamburg2.jpg');
+        }
+        .alicante {
+            @include background('../assets/alicante.jpg');
+        }
+        .milano {
+            @include background('../assets/expo.jpg');
+        }
+    }
+}
+
+.inspiration {
+    h1 {
+        font-size: 32px;
+        color: $main-color;
+        text-align: center;    
+        line-height: 130px;
+        font-weight: 100;
+    } 
+    a {
+        font-weight: bold;
+        color: $main-color;
+        text-decoration-line: underline;
+        text-decoration-style: dashed;
+    }
+}
+
+// --------------classes section----------
+.classes {
+    padding-top: 80px;
+    background-color: $text-color;
+    height: 780px;
+    text-align: center;
+    h4 {
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 1.2;
+        font-weight: 200;
+    }
+    h1 {
+        font-size: 50px;
+        color: rgb(56, 189, 255);
+        font-weight: bold;
+    }
+    p {
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+        width: 615px;
+        margin: 30px auto;
+    }
+    .view-all {
+        color: rgb(56, 189, 255);
+        font-size: 20px;
+        width: 1021px;
+        text-align: right;
+        display: inline-block;
+        margin: 40px auto 20px auto;
+        text-decoration-line: underline;
+        text-decoration-style: dashed;
+        cursor: pointer;
+    }
+    //-----------tab menu-----------
+    .tab-container {
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.1),0px 2px 30px 0px rgba(0, 0, 0, 0.15);
+        width: 1021px;
+        margin: 0 auto;
+        .tab-menu ul {
+            width: 100%;
+            li {
+                width: 33.33%;
+                list-style-type: none;
+                display: inline-block;
+                margin: 0;
+                border-right: 1px solid rgba(30, 30, 30, 0.199);
+                box-sizing: border-box;
+                a {
+                    font-size: 32px;
+                    width: 100%;
+                    line-height: 70px;
+                    display: inline-block;
+                    color: rgba(31, 31, 31, 0.502);
+                    background-color: rgb(240, 240, 240);
+                    border-top: 6px solid rgb(240, 240, 240);
+                    &.active-a {
+                        background-color: white;
+                        color: $main-color;
+                        border-top: 6px solid rgb(56, 189, 255);
+                        box-sizing: border-box;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .tab {
+            text-align: left;
+            display: none;
+            padding: 35px;
+            justify-content: center;
+            img {
+                padding: 0 80px 0 20px;
+                margin-bottom: -40px;
+            }
+            .checked {
+                display: inline-block;
+                padding: 0 30px 40px 70px;
+                list-style-image: url('../assets/v.png');
+                li {
+                    font-size: 20px;
+                    color: $text-color;
+                    line-height: 1.2;
+                    padding: 10px;
+                }
+            }
+            .disabled {
+                @extend .checked;
+                list-style-image: url('../assets/x.png');
+                li {
+                    color: rgba(3, 19, 38, 0.302);
+                    padding: 7px;
+                }
+            }
+        }
+        .tab-active {
+            display: block;
+        }
+    }
+} 

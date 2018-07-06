@@ -1,0 +1,56 @@
+@media only screen and (max-width: 768px){
+    .container {
+        max-width: 728px;
+        margin: 0 20px;
+    }
+
+    .hero {
+        height: 80%;
+        .text {
+            margin-left: 20px;
+        }
+    }
+
+    .about{
+        h1 {
+            font-size: 32px;
+        }
+        .feature {
+            margin: 25px 0 10px 0;
+            width: 50%;
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .offers {
+        .destination.london {
+            @include background('../assets/londonT.jpg');
+            width: 350px;
+            padding-top: 224px;
+            margin: 5px;
+        }
+        .destination.hamburg {
+            @include background('../assets/hamburgT.jpg');
+            width: 350px;
+            padding-top: 224px;
+            margin: 5px;
+        }
+        .destination.alicante {
+            @include background('../assets/alicanteT.jpg');
+            width: 350px;
+            padding-top: 224px;
+            margin: 5px;
+        }
+        .destination.milano {
+            @include background('../assets/milanoT.jpg');
+            width: 350px;
+            padding-top: 224px;
+            margin: 5px;
+        }
+    }
+    
+}
+ 
+ 

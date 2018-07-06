@@ -1,0 +1,85 @@
+
+// --------------footer section----------
+.subscribe {
+    background-color: $main-color;
+    .container {
+        @include flex;
+        height: 130px;
+        .form {
+            display: inline-block;
+            p {
+                display: inline-block;
+                font-size: 24px;
+                color: rgb(255, 255, 255);
+                line-height: 0.833;
+                margin-right: 20px;
+            }
+            form {
+                position: relative;
+                display: inline-block;
+                margin-left: 90px;
+                width: 400px;
+                border-bottom: 1px solid white;
+                padding-bottom: 15px;
+                input {
+                    background-color: $main-color;
+                    border: none;
+                    color: rgba(255, 255, 255, 0.231);
+                    font-size: 18px;
+                    width: 300px;
+                }
+                button {
+                    font-size: 20px;
+                    background-color: $main-color;
+                    border: none;
+                    cursor: pointer;
+                    color: white;
+                    position: absolute;
+                    right: 0;
+                }
+            }
+        }
+        .follow {
+            @extend .form;
+            display: flex;
+            width: fit-content;
+            align-items: center;
+            img {
+                margin: 5px;
+            }
+        }
+    }
+}
+
+.terms {
+    .container {
+        @include flex;
+        height: 115px; 
+        .payment {
+            @include flex;
+            img {
+                margin: 15px;
+            }
+        }
+        .site-map {
+            display: inline-block;
+            ul {
+                list-style-type: none;
+                li {
+                    display: inline-block;
+                    margin: 10px;
+                    a {
+                        font-size: 16px;
+                        color: rgb(102, 102, 102);
+                        line-height: 1.25;
+                    }
+                }
+            }
+        }
+    }
+}
+ 
+.bottom {
+    background-color: rgb(56, 189, 255);
+    height: 10px;
+}
