@@ -40,6 +40,7 @@
         </div>
     </header>
 
+    <!--hero section-->
     <section class="hero">
         <img src="assets/beach.jpg" alt="beach">
         <div class="text">
@@ -51,6 +52,7 @@
         </div>
     </section>
 
+    <!--about section-->
     <section class="about">
         <p>low cost doesn’t mean cheap</p>
         <h1>Fly smart, fly with Green Earth</h1>
@@ -82,6 +84,7 @@
         </div>
     </section>
 
+    <!--offers section-->
     <section class="offers">
         <div class="container">
             <p>Showing our offers from</p>
@@ -118,21 +121,74 @@
         </h1>
     </section>
 
+    <!--classes section-->
     <section class="classes">
         <h4>quality from the inside</h4>
         <h1>Travel the way you want</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor inciunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulnisi ut</p>
+        <a class="view-all">View all services &amp; upgrades</a>
+        
+        <div class="tab-container">
+            <div class="tab-menu">
+                <ul><li><a href="javascript:void(0)" class="tab-a active-a" data-id="tab1">Regular</a>
+                </li><li><a href="javascript:void(0)" class="tab-a" data-id="tab2">Plus</a>
+                </li><li><a href="javascript:void(0)" class="tab-a" data-id="tab3">Premium</a>
+                </li></ul>
+            </div>
+
+            <div class="tab tab-active" data-id="tab1">
+                <img src="assets/kid.png" alt="kid">
+                <ul class="checked">
+                    <li>Reclinable seats</li>
+                    <li>1 Hand luggage</li>
+                    <li>Extra leg room</li>
+                </ul>
+                <ul class="disabled">
+                    <li>Extra cabin luggage</li>
+                    <li>Extra hold luggage</li>
+                    <li>Lounge access</li>
+                </ul>
+            </div>
+            <div class="tab " data-id="tab2">
+                <img src="assets/kid.png" alt="kid">
+                <ul class="checked">
+                    <li>Reclinable seats</li>
+                    <li>1 Hand luggage</li>
+                    <li>Extra leg room</li>
+                </ul>
+                <ul class="disabled">
+                    <li>Extra cabin luggage</li>
+                    <li>Extra hold luggage</li>
+                    <li>Lounge access</li>
+                </ul>
+            </div>
+            <div class="tab " data-id="tab3">
+                <img src="assets/kid.png" alt="kid">
+                <ul class="checked">
+                    <li>Reclinable seats</li>
+                    <li>1 Hand luggage</li>
+                    <li>Extra leg room</li>
+                </ul>
+                <ul class="disabled">
+                    <li>Extra cabin luggage</li>
+                    <li>Extra hold luggage</li>
+                    <li>Lounge access</li>
+                </ul>
+            </div>
+        </div>
+
     </section>
 
+    <!--footer section-->
     <footer>
         <div class="subscribe">
             <div class="container">
                 <div class="form">
                     <p>Subscribe to our</p>
                     <form>
-                        <input type="text" value="Enter your email address">
-                        <button>Send &gt;</button>
+                        <input type="text" placeholder="Enter your email address">
+                        <button type="submit">Send &gt;</button>
                     </form>
                 </div>
                 <div class="follow">
@@ -154,8 +210,12 @@
                 </div>
                 <div class="site-map">
                     <ul>
-                        <li><a href="#">Terms &amp; Privacy</a></li>
-                        <li><a href="#">Site Map</a></li>
+                        <li>
+                            <a href="#">Terms &amp; Privacy</a>
+                        </li>
+                        <li>
+                            <a href="#">Site Map</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -164,6 +224,8 @@
         <div class="bottom"></div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
 

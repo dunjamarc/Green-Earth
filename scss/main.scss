@@ -32,6 +32,7 @@ a {
     margin: 0 auto;
 }
 
+// -------------------header----------
 header {
     .container {
         height: 110px;
@@ -70,6 +71,7 @@ header {
     }
 }
 
+// ----------------hero section----------
 .hero {
     overflow: hidden;
     .text {
@@ -104,6 +106,7 @@ header {
     }
 }
 
+// ---------------about section----------
 .about {
     padding: 60px 0;
     .container {
@@ -147,6 +150,7 @@ header {
     }
 }
 
+// ---------------offers section----------
 .offers {
     background-color: $main-color;
     .container {
@@ -200,10 +204,11 @@ header {
     }
 }
 
+// --------------classes section----------
 .classes {
     padding-top: 80px;
     background-color: $text-color;
-    height: 800px;
+    height: 780px;
     text-align: center;
     h4 {
         font-size: 16px;
@@ -224,8 +229,87 @@ header {
         width: 615px;
         margin: 30px auto;
     }
+    .view-all {
+        color: rgb(56, 189, 255);
+        font-size: 20px;
+        width: 1021px;
+        text-align: right;
+        display: inline-block;
+        margin: 40px auto 20px auto;
+        text-decoration-line: underline;
+        text-decoration-style: dashed;
+        cursor: pointer;
+    }
+    //-----------tab menu-----------
+    .tab-container {
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.1),0px 2px 30px 0px rgba(0, 0, 0, 0.15);
+        width: 1021px;
+        margin: 0 auto;
+        .tab-menu ul {
+            width: 100%;
+            li {
+                width: 33.33%;
+                list-style-type: none;
+                display: inline-block;
+                margin: 0;
+                border-right: 1px solid rgba(30, 30, 30, 0.199);
+                box-sizing: border-box;
+                a {
+                    font-size: 32px;
+                    width: 100%;
+                    line-height: 70px;
+                    display: inline-block;
+                    color: rgba(31, 31, 31, 0.502);
+                    background-color: rgb(240, 240, 240);
+                    border-top: 6px solid rgb(240, 240, 240);
+                    &.active-a {
+                        background-color: white;
+                        color: $main-color;
+                        border-top: 6px solid rgb(56, 189, 255);
+                        box-sizing: border-box;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .tab {
+            text-align: left;
+            display: none;
+            padding: 35px;
+            justify-content: center;
+            img {
+                padding: 0 80px 0 20px;
+                margin-bottom: -40px;
+            }
+            .checked {
+                display: inline-block;
+                padding: 0 30px 40px 70px;
+                list-style-image: url('../assets/v.png');
+                li {
+                    font-size: 20px;
+                    color: $text-color;
+                    line-height: 1.2;
+                    padding: 10px;
+                }
+            }
+            .disabled {
+                @extend .checked;
+                list-style-image: url('../assets/x.png');
+                li {
+                    color: rgba(3, 19, 38, 0.302);
+                    padding: 7px;
+                }
+            }
+        }
+        .tab-active {
+            display: block;
+        }
+    }
 } 
 
+
+// --------------footer section----------
 .subscribe {
     background-color: $main-color;
     .container {
@@ -309,3 +393,4 @@ header {
     background-color: rgb(56, 189, 255);
     height: 10px;
 }
+
