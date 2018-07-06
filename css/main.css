@@ -425,6 +425,39 @@ header .container {
     background-repeat: no-repeat;
     width: 350px;
     padding-top: 224px;
-    margin: 5px; } }
+    margin: 5px; }
+
+  .classes h1 {
+    font-size: 32px; }
+  .classes .tab-container {
+    max-width: 728px; }
+
+  .subscribe {
+    height: 283px; }
+    .subscribe .container {
+      display: block; }
+      .subscribe .container .form, .subscribe .container .follow {
+        display: block; }
+        .subscribe .container .form p, .subscribe .container .follow p {
+          display: block;
+          text-align: center;
+          padding: 40px; }
+        .subscribe .container .form form, .subscribe .container .follow form {
+          border: none;
+          display: block;
+          width: 560px; }
+          .subscribe .container .form form input, .subscribe .container .follow form input {
+            width: 560px;
+            border-bottom: 2px solid white;
+            padding-bottom: 10px; }
+          .subscribe .container .form form button, .subscribe .container .follow form button {
+            position: static;
+            display: block;
+            margin: 45px auto;
+            background-color: white;
+            width: 301px;
+            height: 50px;
+            color: #002f9d;
+            font-weight: bold; } }
 
 /*# sourceMappingURL=main.css.map */

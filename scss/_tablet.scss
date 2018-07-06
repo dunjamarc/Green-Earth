@@ -51,6 +51,51 @@
         }
     }
     
+    .classes {
+        h1 {
+            font-size: 32px;
+        }
+        .tab-container {
+            max-width: 728px;
+        }
+    }
+
+    .subscribe {
+        height: 283px;
+        .container {
+            display: block;
+            .form {
+                display: block;
+                p {
+                    display: block;
+                    text-align: center;
+                    padding: 40px;
+                }
+                form {
+                    border: none;
+                    display: block;
+                    width: 560px;
+                    input {
+                        width: 560px;
+                        border-bottom: 2px solid white;
+                        padding-bottom: 10px;
+                    }
+                    button {
+                        position: static;
+                        display: block;
+                        margin: 45px auto;
+                        background-color: rgb(255, 255, 255);
+                        width: 301px;
+                        height: 50px;
+                        color: $main-color;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
 }
- 
- 
+
+
+  
+  
