@@ -52,11 +52,25 @@
     }
     
     .classes {
+        height: 640px;
         h1 {
             font-size: 32px;
         }
+        .view-all {
+            max-width: 728px;
+            margin-top: 0;
+        }
         .tab-container {
             max-width: 728px;
+            .tab {
+                img {
+                    margin: 0;
+                    padding: 0;
+                }
+                .checked {
+                    padding: 0 0 0 40px;
+                }
+            }
         }
     }
 
@@ -92,10 +106,38 @@
                     }
                 }
             }
+            .follow {
+                display: block;
+                width: 100%;
+                p {
+                    color: $main-color;
+                    display: block;
+                    margin: 0;
+                }
+                img {
+                    color: $main-color;
+                }
+            }
         }
     }
+    .terms {
+        .container {
+            height: 340px;
+            display: block;
+            .payment {
+                display: block;
+                width: fit-content;
+                margin: 0 auto;
+                padding-top: 200px;
+            }
+            .site-map {
+                display: block;
+                width: fit-content;
+                margin: 0 auto;
+            }
+        }
+    }
+    .bottom {
+        height: 20px;
+    }
 }
-
-
-  
-  
